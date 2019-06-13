@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="{{ url_for('static', filename='./favicon.ico') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+	<title>University-domains-list-api</title>
+</head>
+<body>
+	<form action="./search" method="get" accept-charset="utf-8" id="countryRequest" class="forms">        
+		<input type="text" name="country" >      
+		<input type="submit" name="Submit" value="Send request" class="forms" id="1">
+	</form>
+	<button type="button" id="resetButton">Reset</button>
+	<p>
+		Counter	<span id="score">0</span>
+	</p>
+	<table id="queryResult"></table>
+	<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>
